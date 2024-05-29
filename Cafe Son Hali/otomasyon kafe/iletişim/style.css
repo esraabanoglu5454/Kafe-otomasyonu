@@ -1,0 +1,321 @@
+/*Header*/
+h3 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  h3 {
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 47px;
+    font-weight: bold;
+    letter-spacing: 9.4px;
+    margin: 0 0 15px;
+  }
+  
+  
+  p, .a-CTA, input,  .navigation-bar a, .copyright li, .contact .form form label, .contact .form form button {
+    font-family: Cabin, sans-serif;
+  }
+  .fa-asterisk, .a-CTA, h2,  .navigation-bar a:hover,  nav.active .navigation-bar a:hover, footer .social-media .links a:hover, .copyright .info li a, .copyright .CTA li a:hover {
+    color: #a96700;
+  }
+   nav .navigation-bar .underline,  .text .button button:hover, .contact .form form button:hover, .contact .text i:hover {
+    background-color: #a96700;
+  }
+   .navigation-bar ul li,  .text, .about-us .text, .reservation .text, .menu .box-model, .menu .text, .fixed-image .text, footer, .copyright, .contact .text i {
+    text-align: center;
+  }
+   nav,  .navigation-bar ul, .about-us, .reservation, .about-us .image-container, .reservation .image-container, .menu, .menu .menu-image-container, footer .contact-container, .copyright ul, .contact {
+    display: flex;
+  }
+   nav .toggle,  nav .toggle span,  .navigation-bar,  .navigation-bar ul, .menu .box-model .close, footer .social-media .links a, .copyright .CTA li a {
+    transition: .3s;
+  }
+  nav .toggle span,  .navigation-bar a,  .text,  .text .arrow .left,  .text .arrow .right, .recipes, .menu .box-image-container, .fixed-image .text, .copyright, .copyright .arrow-up {
+    position: relative;
+  }
+   nav .toggle,  .navigation-bar .underline,  .text .arrow .left:after,  .text .arrow .right:after,  .svg-down,  .arrow-down, .recipes .text, .menu .box-model .close, .menu .box-model .arrow .arrow-right,.menu .box-model .arrow .arrow-left, .menu .box-image-container .box-image, .copyright .svg-up {
+    position: absolute;
+  }
+  .recipes .text, .fixed-image .text, .menu .box-image-container, .menu .box-image-container .box-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+   nav,  .navigation-bar a:hover .underline,  .navigation-bar li.active .underline, .menu .box-model, .menu .box-image-container, .menu .box-image-container .box-image {
+    width: 100%;
+  }
+  button, .dots > div,  nav .toggle,  .arrow-down, .menu .box-model .close, .menu .box-model .arrow .arrow-right,.menu .box-model .arrow .arrow-left, .menu .menu-image-container .image img, footer .newsletter i, .copyright .arrow-up {
+    cursor: pointer;
+  }
+  .dots .active,  nav.active,  nav.active .toggle.active span,  nav .toggle span,  .navigation-bar .underline,  .text .arrow .left,  .text .arrow .right,  .text .button button, .contact form button {
+    background-color: #fff;
+  }
+  h1, h3,  .navigation-bar a,  .text span, .menu .box-model .close:hover, footer .text h2, footer .text p, footer .social-media .links a, .contact .text i, .contact .form form button {
+    color: #fff;
+  }
+   nav,  .navigation-bar.show,  .navigation-bar a:hover .underline,  .navigation-bar li.active .underline,  .text .arrow .left:after, .menu .box-model, .copyright .arrow-up {
+    left: 0;
+  }
+   .text .arrow .left:after,  .text .arrow .right:after,  .text span, footer .social-media .links a, footer .newsletter i, .copyright .arrow-up, .contact .text i, .contact .form form label {
+    display: inline-block;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+  }
+  
+   nav {
+    position: fixed;
+    top: 0;
+    padding: 36px 36px 20px;
+    z-index: 20;
+  }
+   nav .toggle {
+    display: none;
+    top: 26px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    z-index: 21;
+  }
+   nav .toggle:focus {
+    outline: none;
+  }
+   nav .toggle span {
+    background-color: #000;
+  }
+   nav .toggle {
+    left: 32%;
+  }
+   nav .toggle .first {
+    top: 16px;
+    transform: rotate(-45deg);
+  }
+   nav .toggle .last {
+    top: 0;
+    transform: rotate(45deg);
+  }
+   nav .toggle .hide {
+    transition: 0s;
+    visibility: hidden;
+  }
+   nav .toggle span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    border-radius: 40px;
+  }
+   nav .toggle span:not(:last-of-type) {
+    margin-bottom: 6px;
+  }
+   nav .logo {
+    flex-basis: 56%;
+    padding-left: 50px;
+    list-style-type: none;
+  }
+   .navigation-bar.show {
+    width: 40%;
+  }
+   .navigation-bar.show a {
+    color: #ccc !important;
+  }
+   .navigation-bar.show a:hover {
+    color: #fff !important;
+  }
+  
+  .navigation-bar ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  /*
+   .navigation-bar ul li {
+    flex: 1;
+    padding: 0 10px;
+  }*/
+   .navigation-bar a {
+    text-decoration: none;
+    transition: all .5s;
+    font-size: 16px;
+  }
+   nav .navigation-bar a {
+    color: #ffffff;
+  }
+   .navigation-bar .underline {
+    height: 2px;
+    width: 0;
+    left: 50%;
+    bottom: -4px;
+    transition: all .3s;
+    display: block;
+  }
+   .text {
+    top: 24%;
+  }
+   .text h1 {
+    margin-bottom: 0;
+  }
+   .text .arrow .left,  .text .arrow .right {
+    height: 3px;
+    width: 100px;
+  }
+   .text .arrow .left {
+    left: -4%;
+  }
+   .text .arrow .right {
+    right: -4%;
+  }
+   .text .arrow .left:after,  .text .arrow .right:after {
+    content: '';
+    border: 10px solid transparent;
+    border-left-color: #fff;
+    top: -8px;
+  }
+   .text .arrow .right:after {
+    right: 0;
+    border-color: transparent #fff transparent transparent;
+  }
+   .text .arrow .fa-asterisk {
+    vertical-align: super;
+  }
+   .text span {
+    font-family: "Source Code Pro", sans-serif;
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+   .text .button button, .contact form button {
+    border: none;
+    padding: 9px 18px;
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    font-family: source_sans_problack, sans-serif;
+    border-radius: 3px;
+  }
+   .text .button button, .contact form button:focus {
+    outline: none;
+  }
+   .svg-down {
+    bottom: 0;
+    left: 50%;
+    z-index: 5;
+    margin-left: -96px;
+    margin-bottom: -12px;
+    color: #fff;
+  }
+  
+  /*Header end*/
+
+
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@100;200');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+
+}
+
+.container{
+    min-height: 100vh;
+    background:RGBA(255,255,255,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./assets/images/kafe3.jpg") no-repeat center center/cover;
+}
+
+.container form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(255,255,255,0);
+    border-radius: 15px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+
+    
+}
+
+.container form h1{
+    color:#fff;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+
+}
+
+.container form input::placeholder{
+    color:#ddd;
+}
+
+.container form #lastName,
+.container form #mobile{
+    margin-left: 20px;
+}
+
+.container form h4{
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::webkit-scrolbar{
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(194,194,194,0.713);
+}
+
+.container form #button{
+    border: none;
+    background: #EDE8D5;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size:20px;
+    color:#d49569;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3;
+
+}
+
+.container form #button:hover{
+    opacity:0.7;
+
+}

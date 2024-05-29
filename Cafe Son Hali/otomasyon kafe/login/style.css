@@ -1,0 +1,475 @@
+/*Header*/
+h3 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h3 {
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 47px;
+  font-weight: bold;
+  letter-spacing: 9.4px;
+  margin: 0 0 15px;
+}
+
+
+p, .a-CTA, input,  .navigation-bar a, .copyright li, .contact .form form label, .contact .form form button {
+  font-family: Cabin, sans-serif;
+}
+.fa-asterisk, .a-CTA, h2,  .navigation-bar a:hover,  nav.active .navigation-bar a:hover, footer .social-media .links a:hover, .copyright .info li a, .copyright .CTA li a:hover {
+  color: #a96700;
+}
+ nav .navigation-bar .underline,  .text .button button:hover, .contact .form form button:hover, .contact .text i:hover {
+  background-color: #a96700;
+}
+ .navigation-bar ul li,  .text, .about-us .text, .reservation .text, .menu .box-model, .menu .text, .fixed-image .text, footer, .copyright, .contact .text i {
+  text-align: center;
+}
+ nav,  .navigation-bar ul, .about-us, .reservation, .about-us .image-container, .reservation .image-container, .menu, .menu .menu-image-container, footer .contact-container, .copyright ul, .contact {
+  display: flex;
+}
+ nav .toggle,  nav .toggle span,  .navigation-bar,  .navigation-bar ul, .menu .box-model .close, footer .social-media .links a, .copyright .CTA li a {
+  transition: .3s;
+}
+nav .toggle span,  .navigation-bar a,  .text,  .text .arrow .left,  .text .arrow .right, .recipes, .menu .box-image-container, .fixed-image .text, .copyright, .copyright .arrow-up {
+  position: relative;
+}
+ nav .toggle,  .navigation-bar .underline,  .text .arrow .left:after,  .text .arrow .right:after,  .svg-down,  .arrow-down, .recipes .text, .menu .box-model .close, .menu .box-model .arrow .arrow-right,.menu .box-model .arrow .arrow-left, .menu .box-image-container .box-image, .copyright .svg-up {
+  position: absolute;
+}
+.recipes .text, .fixed-image .text, .menu .box-image-container, .menu .box-image-container .box-image {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+ nav,  .navigation-bar a:hover .underline,  .navigation-bar li.active .underline, .menu .box-model, .menu .box-image-container, .menu .box-image-container .box-image {
+  width: 100%;
+}
+button, .dots > div,  nav .toggle,  .arrow-down, .menu .box-model .close, .menu .box-model .arrow .arrow-right,.menu .box-model .arrow .arrow-left, .menu .menu-image-container .image img, footer .newsletter i, .copyright .arrow-up {
+  cursor: pointer;
+}
+.dots .active,  nav.active,  nav.active .toggle.active span,  nav .toggle span,  .navigation-bar .underline,  .text .arrow .left,  .text .arrow .right,  .text .button button, .contact form button {
+  background-color: #fff;
+}
+h1, h3,  .navigation-bar a,  .text span, .menu .box-model .close:hover, footer .text h2, footer .text p, footer .social-media .links a, .contact .text i, .contact .form form button {
+  color: #fff;
+}
+ nav,  .navigation-bar.show,  .navigation-bar a:hover .underline,  .navigation-bar li.active .underline,  .text .arrow .left:after, .menu .box-model, .copyright .arrow-up {
+  left: 0;
+}
+ .text .arrow .left:after,  .text .arrow .right:after,  .text span, footer .social-media .links a, footer .newsletter i, .copyright .arrow-up, .contact .text i, .contact .form form label {
+  display: inline-block;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+ nav {
+  position: fixed;
+  top: 0;
+  padding: 36px 36px 20px;
+  z-index: 20;
+}
+
+
+ nav .toggle {
+  display: none;
+  top: 26px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 21;
+}
+ nav .toggle:focus {
+  outline: none;
+}
+ nav .toggle span {
+  background-color: #000;
+}
+ nav .toggle {
+  left: 32%;
+}
+ nav .toggle .first {
+  top: 16px;
+  transform: rotate(-45deg);
+}
+ nav .toggle .last {
+  top: 0;
+  transform: rotate(45deg);
+}
+ nav .toggle .hide {
+  transition: 0s;
+  visibility: hidden;
+}
+ nav .toggle span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-radius: 40px;
+}
+ nav .toggle span:not(:last-of-type) {
+  margin-bottom: 6px;
+}
+ nav .logo {
+  flex-basis: 56%;
+  padding-left: 50px;
+  list-style-type: none;
+}
+ .navigation-bar.show {
+  width: 40%;
+}
+ .navigation-bar.show a {
+  color: #ccc !important;
+}
+ .navigation-bar.show a:hover {
+  color: #fff !important;
+}
+
+.navigation-bar ul{
+  display: flex;
+  gap: 20px;
+}
+
+/* .navigation-bar ul li {
+  flex: 1;
+  padding: 0 10px;
+}*/
+ .navigation-bar a {
+  text-decoration: none;
+  transition: all .5s;
+  font-size: 16px;
+}
+ nav .navigation-bar a {
+  color: #ffffff;
+}
+ .navigation-bar .underline {
+  height: 2px;
+  width: 0;
+  left: 50%;
+  bottom: -4px;
+  transition: all .3s;
+  display: block;
+}
+ .text {
+  top: 24%;
+}
+ .text h1 {
+  margin-bottom: 0;
+}
+ .text .arrow .left,  .text .arrow .right {
+  height: 3px;
+  width: 100px;
+}
+ .text .arrow .left {
+  left: -4%;
+}
+ .text .arrow .right {
+  right: -4%;
+}
+ .text .arrow .left:after,  .text .arrow .right:after {
+  content: '';
+  border: 10px solid transparent;
+  border-left-color: #fff;
+  top: -8px;
+}
+ .text .arrow .right:after {
+  right: 0;
+  border-color: transparent #fff transparent transparent;
+}
+ .text .arrow .fa-asterisk {
+  vertical-align: super;
+}
+ .text span {
+  font-family: "Source Code Pro", sans-serif;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+ .text .button button, .contact form button {
+  border: none;
+  padding: 9px 18px;
+  letter-spacing: 2.4px;
+  font-size: 12px;
+  font-family: source_sans_problack, sans-serif;
+  border-radius: 3px;
+}
+ .text .button button, .contact form button:focus {
+  outline: none;
+}
+ .svg-down {
+  bottom: 0;
+  left: 50%;
+  z-index: 5;
+  margin-left: -96px;
+  margin-bottom: -12px;
+  color: #fff;
+}
+
+/*Header end*/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
+
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  background: url("../anasayfa/public/images/header.jpg");
+  background-size: 180% 180%;
+  animation: body 7s ease infinite;
+  /*display: flex;
+  justify-content:center;*/
+}
+
+input, button {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.tip {
+  font-size: 20px;
+  margin: 40px auto 50px;
+  text-align: center;
+}
+
+.cont {
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  width: 900px;
+  height: 550px;
+  margin: 0 auto 100px;
+  background: #fff;
+}
+
+.form {
+  position: relative;
+  width: 640px;
+  height: 100%;
+  transition: transform 1.2s ease-in-out;
+  padding: 50px 30px 0;
+}
+
+.sub-cont {
+  overflow: hidden;
+  position: absolute;
+  left: 640px;
+  top: 0;
+  width: 900px;
+  height: 100%;
+  padding-left: 260px;
+  background: #fff;
+  transition: transform 1.2s ease-in-out;
+}
+.cont.s--signup .sub-cont {
+  transform: translate3d(-640px, 0, 0);
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  height: 36px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.img {
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 260px;
+  height: 100%;
+  padding-top: 360px;
+}
+
+.img:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 900px;
+  height: 100%;
+  background-image: url("cafe.jpg");
+  background-size: cover;
+  transition: transform 1.2s ease-in-out;
+}
+.img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.cont.s--signup .img:before {
+  transform: translate3d(640px, 0, 0);
+}
+.img__text {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  color: #fff;
+  transition: transform 1.2s ease-in-out;
+}
+.img__text h2 {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.img__text p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.cont.s--signup .img__text.m--up {
+  transform: translateX(520px);
+}
+.img__text.m--in {
+  transform: translateX(-520px);
+}
+.cont.s--signup .img__text.m--in {
+  transform: translateX(0);
+}
+.img__btn {
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  width: 100px;
+  height: 36px;
+  margin: 0 auto;
+  background: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  cursor: pointer;
+}
+.img__btn:after {
+  content: "";
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+.img__btn span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.2s;
+}
+.img__btn span.m--in {
+  transform: translateY(-72px);
+}
+.cont.s--signup .img__btn span.m--in {
+  transform: translateY(0);
+}
+.cont.s--signup .img__btn span.m--up {
+  transform: translateY(72px);
+}
+
+h2 {
+  width: 100%;
+  font-size: 26px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  width: 260px;
+  margin: 25px auto 0;
+  text-align: center;
+}
+label span {
+  font-size: 12px;
+  color: #cfcfcf;
+  text-transform: uppercase;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.forgot-pass {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: #cfcfcf;
+}
+
+.submit {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: #d4af7a;
+  text-transform: uppercase;
+}
+
+.fb-btn {
+  border: 2px solid #d3dae9;
+  color: #00184c;
+  text-decoration: none;
+}
+
+
+.fb-btn span a{
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+
+.sign-in {
+  transition-timing-function: ease-out;
+}
+.cont.s--signup .sign-in {
+  transition-timing-function: ease-in-out;
+  transition-duration: 1.2s;
+  transform: translate3d(640px, 0, 0);
+}
+
+.sign-up {
+  transform: translate3d(-900px, 0, 0);
+}
+.cont.s--signup .sign-up {
+  transform: translate3d(0, 0, 0);
+}
+
+.icon-link {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  width: 32px;
+}
+.icon-link img {
+  width: 100%;
+  vertical-align: top;
+}
+.icon-link--twitter {
+  left: auto;
+  right: 5px;
+}

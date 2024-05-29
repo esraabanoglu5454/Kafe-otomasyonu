@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charry On Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+</head>
+
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+            <h3>Cherry On Lab</h3>
+        </div>
+        <div class="toggle">
+            <span class="first"></span>
+            <span class="middle"></span>
+            <span class="last"></span>
+        </div>
+        <div class="navigation-bar">
+            <ul>
+              <li><a href="../anasayfa/index.html">ANA SAYFA<span class="underline"></span></a></li>
+              <li class="active"><a href="../hakkımızda/index.html">HAKKINDA<span class="underline"></span></a></li>
+              <li><a href="../menu/index.html">MENÜ<span class="underline"></span></a></li>
+              <li><a href="../kupon-shop/index.html">ÜRÜNLER<span class="underline"></span></a></li>
+              <li><a href="../iletişim/iletisim.html">iLETİŞİM<span class="underline"></span></a></li>
+              <li><a href="../login/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg><span class="underline"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+    <div class="hero-img">
+        <img src="./images/hakkında1.jpg">
+    </div>
+
+    <div class="container">
+        <div class="cols">
+            <div class="col col-left">
+                <div class="copy">
+                    <br>
+                    <div class="sub-header">
+                        HAKKIMIZDA
+                    </div>
+                    <br>
+
+                    <!--<div class="img-wrapper">
+                        <img src="./images/anasayfa4.jpg" alt="">
+                    </div>-->
+                   
+
+
+
+                    <div class="info">
+                        Hoş geldiniz! Cherry on Lab, lezzetin ve yaratıcılığın buluşma noktasıdır. Kafe kültürünü yeniden tanımlayan bir anlayışla, her bir ziyaretçimizi lezzet dolu bir deneyime davet ediyoruz.
+Cherry on Lab, sadece kahve içmek için değil, aynı zamanda keyifli zaman geçirmek, yeni lezzetler keşfetmek ve kafe deneyimini bir üst seviyeye taşımak isteyenler için tasarlandı. Her bir fincanımızda, özenle seçilmiş kahve çekirdekleri ve taze malzemelerle hazırlanan enfes tatlarla buluşacaksınız.
+
+Misafirlerimize en kaliteli ürünleri sunarken, çevreye duyarlılığımızı da koruyoruz. Sürdürülebilirlik ilkemizle, yerel üreticilerden tedarik ettiğimiz malzemelerle, doğaya olan sorumluluğumuzu yerine getiriyoruz.
+
+Cherry on Lab, sadece bir kafe değil, aynı zamanda bir buluşma noktasıdır. Burada, dostlarınızla keyifli sohbetler ederken veya tek başınıza kendi iç dünyanıza dalarken kendinizi evinizde hissedeceksiniz. Her yaş grubundan ve her damak zevkinden misafiri ağırlayan kafe olarak, sıcak atmosferimizle herkesi kucaklıyoruz.
+
+Biz Cherry on Lab olarak, her detayı özenle düşünerek, lezzetinizi ve memnuniyetinizi en üst seviyede tutmayı hedefliyoruz. Sizleri, kafe deneyiminde yeni bir boyut keşfetmeye davet ediyoruz. Gelip bize katılın, lezzet dolu bir yolculuğa çıkın!
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col col-right">
+                <div class="header">
+                    her gün <br />
+                    bir <br />yudum<br />
+                    mutluluk
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader-text-wrapper block">
+        <h1 class="loader-text">
+            cherry on lab
+        </h1>
+    </div>
+    <!--
+    <div class="revealer"></div>
+    <div class="pre-loader block">
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+        </div>
+    </div>-->
+
+ <script>
+        var textWrapper = document.querySelector(".loader-text");
+        textWrapper.innerHTML = textWrapper.textContent.replace(
+            /\S/g,
+            "<span class='letter'>$&</span>"
+        );
+
+
+
+        gsap.timeline().add({
+            targets: ".loader-text .letter",
+            translateX: [40, 0],
+            translateZ: 0,
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 1200,
+            delay: (el, i) => 2400 + 30 * i,
+
+        });
+
+        gsap.from(".loader-wrapper", {
+            duration: 2,
+            scale: 0.8,
+            ease: "power1.inOut",
+        });
+
+        gsap.from(".loader", {
+            duration: 2,
+            top: "100%",
+            ease: "power3.inOut",
+        });
+
+        gsap.to(
+            ".loader-wrapper, .pre-loader", {
+                duration: 1,
+                scale: 1.5,
+                opacity: 0,
+                display: "none",
+                ease: "power3.inOut",
+                delay: 0.2,
+            },
+            "-=1"
+        );
+
+        gsap.from(".revealer", {
+            duration: 1,
+            width: "0",
+            ease: "power3.inOut",
+            delay: 0.5,
+        });
+
+        gsap.to(".revealer", {
+            duration: 0.2,
+            left: "100%",
+            ease: "power3.inOut",
+            delay: 0.7,
+
+        });
+
+        gsap.to(".loader-text-wrapper", {
+            duration: 0.2,
+            opacity: 0,
+            display: "none",
+            ease: "power3.inOut",
+            delay: 0.5
+        }); 
+
+
+        gsap.from(".col-left", {
+            duration: 1,
+            left: "-100%",
+            ease: "power3.inOut",
+            delay: 1
+        });
+
+        gsap.from(".col-left .copy > div", {
+            duration: 1.5,
+            x: -40,
+            opacity: 0,
+            ease: "power3.inOut",
+            delay: 1.5,
+            stagger: {
+                amount: 0.3
+            }
+        });
+
+        gsap.from(".col-right .header", {
+            duration: 1,
+            x: -20,
+            opacity: 0,
+            ease: "power3.inOut",
+            delay: 2.2,
+        });
+    </script>
+
+</body>
+
+</html>
+
